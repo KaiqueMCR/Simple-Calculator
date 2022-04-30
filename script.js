@@ -22,22 +22,26 @@ function newCalculator() {
         calculate() {
             const displayValue = this.display.value
             const displayValueParsed = parseInt(displayValue)
-
-
-            console.log(displayValueParsed);
-            console.log(displayValueParsed == NaN);
             
             if(isNaN(displayValueParsed)) {
                 this.clearDisplay()
-               alert('Invalid calculation')
+                alert('Invalid calculation')
             } else {
                 const result = eval(displayValue)
-                this.display.value = result
-                
+                this.display.value = result  
             }
         },
 
         handleClick() {
+            document.addEventListener('keypress', element => {
+                const key = element.key
+
+                if (document.hasFocus() && key == "Enter") {
+                    this.calculate()
+                }
+            })
+
+
             this.calculatorDOM.addEventListener('click', element => {
                 const target = element.target
 
