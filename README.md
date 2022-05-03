@@ -15,7 +15,7 @@
 
 ## Screenshot
 
-[<img src="/.github/screenshot.png" />](https://kaiquemcr.github.io/Simple-Calculator/)
+[<img src="./.github/screenshot.png" />](https://kaiquemcr.github.io/Simple-Calculator/)
 
 <p align="center">Click on the image above to see in production 👆</p>
 
